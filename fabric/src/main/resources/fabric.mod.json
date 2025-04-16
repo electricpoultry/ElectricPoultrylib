@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "electricpoultrylib",
+  "version": "${version}",
+  "name": "ElectricPoultryLib",
+  "description": "A Library for My Mods.",
+  "authors": [
+    "ElectricPoultry"
+  ],
+  "contact": {
+    "homepage": "https://modrinth.com/mod/electricpoultry-lib",
+    "issues": "https://github.com/electricpoultry/ElectricPoultrylib/issues",
+    "sources": "https://github.com/electricpoultry/ElectricPoultrylib"
+  },
+  "license": "GNU LGPLv3",
+  "icon": "assets/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "io.github.electricpoultry.electricpoultrylib.fabric.ElectricPoultryLibFabric"
+    ],
+    "client": [
+      "io.github.electricpoultry.electricpoultrylib.fabric.client.ElectricPoultryLibFabricClient"
+    ]
+  },
+  "mixins": [
+    "electricpoultrylib.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.13",
+    "minecraft": "~1.21.1",
+    "java": ">=21",
+    "architectury": ">=13.0.8",
+    "fabric-api": "*"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}

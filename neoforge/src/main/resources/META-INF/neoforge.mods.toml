@@ -1,0 +1,39 @@
+modLoader = "javafml"
+loaderVersion = "[4,)"
+issueTrackerURL = "https://github.com/electricpoultry/ElectricPoultrylib/issues"
+license = "GNU LGPLv3"
+
+[[mods]]
+modId = "electricpoultrylib"
+version = "${version}"
+displayName = "ElectricPoultryLib"
+authors = "ElectricPoultry"
+description = '''
+A Library for My Mods.
+'''
+logoFile = "assets/icon.png"
+
+
+[[dependencies.electricpoultrylib]]
+modId = "neoforge"
+type = "required"
+versionRange = "[21.1,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.electricpoultrylib]]
+modId = "minecraft"
+type = "required"
+versionRange = "[1.21.1,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.electricpoultrylib]]
+modId = "architectury"
+type = "required"
+versionRange = "[13.0.8,)"
+ordering = "AFTER"
+side = "BOTH"
+
+[[mixins]]
+config = "electricpoultrylib.mixins.json"

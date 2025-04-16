@@ -1,26 +1,13 @@
-# eclipse
-bin
-*.launch
-.settings
-.metadata
-.classpath
-.project
-
-# idea
-out
-*.ipr
-*.iws
-*.iml
-.idea
-
-# gradle
-build
-.gradle
-
-# other
-eclipse
-run
-runs
-run-data
-
-repo
+# Default ignored files
+/shelf/
+/workspace.xml
+/fabric/run/
+/neoforge/run/
+/fabric/.gradle/
+/fabric/build/
+/neoforge/.gradle/
+/neoforge/build/
+/.idea/
+/.gradle/
+/common/.gradle/
+/common/build/
